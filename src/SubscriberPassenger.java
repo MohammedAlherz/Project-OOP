@@ -8,7 +8,7 @@ public class SubscriberPassenger extends Passenger{
     }
     @Override
     public void reservedCar(Car car) {
-        if(car.getMaxCapacity() <= 0) {
+        if(car.getMaxCapacity() == 0) {
             throw new IllegalArgumentException("Car is full, cannot reserve.");
         }else {
 
